@@ -1,6 +1,5 @@
 from typing import List
 from heapq import heappop, heappush
-from collections import defaultdict
 
 class Edge:
     dest: int
@@ -72,3 +71,32 @@ class Dijkstra:
                     heappush(self.heapq, (new_cost, new_time, neighbor))
 
         return -1
+
+# Adicione este trecho em def minCost na classe Solution para testar no leetcode
+#graph = Graph(edges, passingFees)
+#graph.build_graph()
+
+#dijkstra = Dijkstra(graph)
+#return dijkstra.find_min_val(maxTime)
+
+""" Desconmente para testar no leetcode
+maxTime = 30
+edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]
+passingFees = [5,1,2,20,20,3]
+
+graph = Graph(edges, passingFees)
+graph.build_graph()
+dijkstra = Dijkstra(graph)
+print(dijkstra.find_min_val(maxTime))
+
+
+maxTime = 29
+edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]
+passingFees = [5,1,2,20,20,3]                                                                                             
+
+graph = Graph(edges, passingFees)
+graph.build_graph()
+dijkstra = Dijkstra(graph)
+print(dijkstra.find_min_val(maxTime))
+"""
+
