@@ -31,7 +31,8 @@ Saída obtida:
 
 ![SaidasObtidas](https://github.com/projeto-de-algoritmos-2024/Grafos2-Online-Judge/blob/main/Questoes/Questao_743/assets/OutputTeste.png "SaidasObtidas")
 
-Foi utilizado um algoritmo de Dijkstra modificado para realizar a busca o menor caminho em um grafo com peso em suas arestas, e em seus vértices. O desafio deste problema consiste em entender como modificar o algoritmo de Dijkstra original para encontrar o menor custo de soma dos vértices mantendo-se dentro de um limite estabelecido de soma dos pesos das arestas.
+Para realização deste exercício foi utilizado um algoritmo de Dijkstra simples onde dado um nó arbitrário devemos calcular o tempo total que leva saindo do nó escolhido, até todos os outros nós adjacentes, caso não seja possível atingir o no, por ser um grafo direcionado deve retornar -1 
+
 <br>
 
 ![Submissao](https://github.com/projeto-de-algoritmos-2024/Grafos2-Online-Judge/blob/main/Questoes/Questao_743/assets/Aceito.png "Exercicio Submetido")
